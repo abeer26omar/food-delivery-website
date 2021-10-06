@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Delivery</title>
+    <!--external css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">    <!--internal style sheet-->
+    <!--internal css-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="preLoader()">    
+    <!--preLoader-->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinners">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+  <div style="display: none;" id="body">
+    <header>
+        <div class="header-bottom mt-20">
+            <div class="container position-relative">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-6 mb-20">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/logo2.png" alt="logo" width="100%">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <nav style="display: block;">
+                            <ul class="main-menu main-menu2">
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">pages</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-5 col-md-9 col-12">
+                        <div class="customer-area d-flex align-items-center justify-content-between">
+                            <span class="position-relative">
+                                <a href="#" class="shopping" ><i class="fas fa-shopping-basket"></i></a>
+                                <span class="counter">1</span>
+                            </span>
+                            <span class="d-none d-md-block">
+                                <img src="images/1.png">
+                            </span>
+                            <div class="order-content">
+                                <span class="span-1">delivery order</span>
+                                <span class="span-2">123-67658436</span>
+                            </div>
+                            <a href="#" class="btn">login</a>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile menu-->
+                <div class="mobile-menu home2 mean-container" style="display: none;">  
+                    <div class="mean-bar">
+                        <a href="#nav" id="mobil-menu" class="meanmenu-reveal" style="right: 0px;left: auto;text-align: center;text-indent: 0px;font-size: 18px;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <nav class="mean-nav">
+                            <ul class=" main-menu2 sub-menu" id="menu-ul" style="display: none;">
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">pages</a></li>
+                                <li><a href="#">contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>
+    <!--promo section-->
+    <section class="delivery-area burger-promo-area pt-240 pb-135">
+        <div class="del-shapes">
+            <span class="sp-1"><img src="images/shape1.png" alt="shape1"></span>
+            <span class="sp-2"><img src="images/shape2.png" alt="shape2"></span>
+            <span class="sp-3"><img src="images/shape3.png" alt="shape3"></span>
+            <span class="sp-4"><img src="images/shape4.png" alt="shape4"></span>
+        </div>
+        <div class="container">
+            <div class="row flex-row-reverse align-items-center">
+                <div class="col-lg-6 col-md-12 mb-20">
+                    <div class="delivery-left">
+                        <div class="burger-shapes">
+                            <span class="sh-1" style="transform: translate3d(-0.2px, -1.70833px, 0px);"><img src="images/10.png" alt="pepper"></span>
+                            <span class="sh-2"><img src="images/11.png" alt="souce"></span>
+                            <span class="sh-3"><img src="images/12.png" alt="sale"></span>
+                            <span class="sh-4"><img src="images/13.png" alt="burger"></span>
+                            <span class="sh-5"><img src="images/14.png" alt="tomato"></span>
+                            <span class="sh-6"><img src="images/15.png" alt="chili"></span>
+                        </div>
+                        <img src="images/burger-promo.png" alt="burger-promo" class="promo-img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="delivery-right">
+                        <div class="common-title-area pb-40">
+                            <h3>best in town</h3>
+                            <!-- <h1>enjoy our chicken<span> burger </span>fast food</h1> -->
+                            <h1>enjoy our chicken<span>
+                                burger
+                            </span> fast food</h1>
+                            <h5 class="mb-40 mt-40">Bacon-Potatos-Bbq Sauce</h5>
+                            <div class="order-box d-flex align-items-center">
+                                <a href="#" class="btn">Order Now</a>
+                                <h5>price: <span>$10.50</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--banner gallery-->
+    <section class="banner-gallery banner-gallery2 pt-120 pb-60">
+        <div class="container position-relative">
+            <div class="del-shapes">
+                <span class="del-1 item-bounce"><img src="images/del-1.png" alt="leaf"></span>
+                <span class="del-2 item-bounce"><img src="images/del-2.png" alt="mashroom"></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="gallery-img-1">
+                        <h3>buzzed burger</h3>
+                        <p>sale off 50% only this week</p>
+                        <a href="#" class="btn">order now</a>
+                        <img src="images/bbr.png" alt="burger">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6"></div>
+                <div class="col-lg-3 col-md-6"></div>
+
+            </div>
+        </div>
+    </section>
+  </div>
+
+    <!--bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <!--internal js-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
