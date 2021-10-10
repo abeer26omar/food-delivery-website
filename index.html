@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Delivery</title>
     <!--external css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">    <!--internal style sheet-->
-    <!--internal css-->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/meanmenu.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body onload="preLoader()">    
@@ -76,11 +76,11 @@
                         </a>
                         <nav class="mean-nav">
                             <ul class=" main-menu2 sub-menu" id="menu-ul" style="display: none;">
-                                <li><a class="nav" href="#">home</a></li>
-                                <li><a class="nav" href="#">about</a></li>
-                                <li><a class="nav" href="#">blog</a></li>
-                                <li><a class="nav" href="#">pages</a></li>
-                                <li><a class="nav" href="#">contact</a></li>
+                                <li><a class="link" href="#">home</a></li>
+                                <li><a class="link" href="#">about</a></li>
+                                <li><a class="link" href="#">blog</a></li>
+                                <li><a class="link" href="#">pages</a></li>
+                                <li><a class="link" href="#">contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -199,15 +199,674 @@
             </div>
         </div>
     </section>
-  </div>
-
-    <!--bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    <!--internal js-->
+    <!--menu section-->
+    <section class="menu-area home2-menu-area pb-10">
+        <div class="menu-shapes">
+            <span class="menu-shape-1"><img src="images/m1.png" alt="burger"></span>
+            <span class="menu-shape-2 item-bounce"><img src="images/m2.png" alt="tomato"></span>
+            <span class="menu-shape-3"><img src="images/m3.png" alt="mashroom"></span>
+            <span class="menu-shape-4 item-bounce"><img src="images/m4.png" alt="pepper"></span>
+            <span class="menu-shape-5"><img src="images/m5.png" alt="pepper"></span>
+        </div>
+        <div class="container">
+            <div class="common-title-area p-50 animate__animated animate__fadeInLeft">
+                <h3>food items</h3>
+                <h2>popular <span>menu</span></h2>
+            </div>
+            <!--menu nav wrapper-->
+            <div class="menu-nav-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <nav>
+                            <div class="nav" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-menu-1" data-bs-toggle="tab" role="tab" 
+                                data-bs-target="#menu-1" aria-controls="menu-1" aria-selected="true">
+                                <div class="single-menu-nav text-center">
+                                    <div class="menu-img mb-10">
+                                        <img src="images/pizza.png" alt="pizza">
+                                    </div>
+                                    <h6>pizza</h6>
+                                    <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
+                                    <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
+                                </div></a>
+                                <a class="nav-item nav-link" id="nav-menu-2" 
+                                data-bs-toggle="tab" role="tab" 
+                                data-bs-target="#menu-2" aria-controls="menu-2" aria-selected="false">
+                                <div class="single-menu-nav text-center">
+                                    <div class="menu-img mb-10">
+                                        <img src="images/burger.png" alt="burger">
+                                    </div>
+                                    <h6>burger</h6>
+                                    <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
+                                    <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
+                                </div></a>
+                                <a class="nav-item nav-link" id="nav-menu-3" data-bs-toggle="tab" role="tab" 
+                                data-bs-target="#menu-3" aria-controls="menu-3" aria-selected="false">
+                                <div class="single-menu-nav text-center">
+                                    <div class="menu-img mb-10">
+                                        <img src="images/chicken.png" alt="chicken">
+                                    </div>
+                                    <h6>chicken</h6>
+                                    <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
+                                    <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
+                                </div></a>
+                                <a class="nav-item nav-link" id="nav-menu-4" data-bs-toggle="tab" role="tab" 
+                                data-bs-target="#menu-4" aria-controls="menu-4" aria-selected="false">
+                                <div class="single-menu-nav text-center">
+                                    <div class="menu-img mb-10">
+                                        <img src="images/drinks.png" alt="drinks">
+                                    </div>
+                                    <h6>drinks</h6>
+                                    <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
+                                    <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
+                                </div></a>
+                                <a class="nav-item nav-link" id="nav-menu-5" data-bs-toggle="tab" role="tab" 
+                                data-bs-target="#menu-5" aria-controls="menu-5" aria-selected="false">
+                                <div class="single-menu-nav text-center">
+                                    <div class="menu-img mb-10">
+                                        <img src="images/drinks2.png" alt="vegdrinks">
+                                    </div>
+                                    <h6>drinks</h6>
+                                    <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
+                                    <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
+                                </div></a>
+                                <a class="nav-item nav-link" id="nav-menu-6" data-bs-toggle="tab" role="tab" 
+                                data-bs-target="menu-6" aria-controls="menu-6" aria-selected="false">
+                                <div class="single-menu-nav text-center">
+                                    <div class="menu-img mb-10">
+                                        <img src="images/combo.png" alt="Combo">
+                                    </div>
+                                    <h6>combo menu</h6>
+                                    <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
+                                    <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
+                                </div></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+                  <!--menu items wrapper-->
+            <div class="tab-content" id="nav-tabContent">
+                <!--menu-1-->
+                <div class="tap-pane fade show active" id="menu-1" role="tabpanel" aria-labelledby="nav-menu-1">
+                    <div class="menu-items-wrapper p-50">
+                        <div class="menu-i-shapes">
+                            <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz1.png" alt="margherita">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">margherita</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz2.png" alt="tomato">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">tomato</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz3.png" alt="marinara">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">marinara</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span class="del"><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz4.png" alt="frutti di mare">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">frutti di mare</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz5.png" alt="americana">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">americana</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz6.png" alt="pizza ai pesto">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">pizza ai pesto</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <!--menu-2-->
+                <!-- <div class="tap-pane fade " id="menu-2" role="tabpanel" aria-labelledby="nav-menu-2">
+                    <div class="menu-items-wrapper p-50">
+                        <div class="menu-i-shapes">
+                            <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br1.png" alt="garlic burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">garlic burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br2.png" alt="cheese burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">cheese burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br3.png" alt="beef burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">beef burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span class="del"><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br4.png" alt="crispy burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">crispy burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br5.png" alt="chicken burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">chicken burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br6.png" alt="naga burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">naga burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div> -->
+                <!--menu-3-->
+                <!-- <div class="tap-pane fade " id="menu-3" role="tabpanel" aria-labelledby="nav-menu-3">
+                    <div class="menu-items-wrapper p-50">
+                        <div class="menu-i-shapes">
+                            <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch1.png" alt="garlic chicken">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">garlic chicken</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch2.png" alt="thai chicken">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">thai chicken</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch3.png" alt="bpq">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">bpq</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span class="del"><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch4.png" alt="mutton">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">mutton</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch5.png" alt="pepper chicken">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">pepper chicken</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch6.png" alt="crispy chicken">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">crispy chicken</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div> -->
+                <!--menu-4-->
+                <!-- <div class="tap-pane fade" id="menu-4" role="tabpanel" aria-labelledby="nav-menu-4">
+                    <div class="menu-items-wrapper p-50">
+                        <div class="menu-i-shapes">
+                            <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/dr1.jpg" alt="prune juice">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">prune juice</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/dr2.jpg" alt="guafa juice">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">guafa juice</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/dr3.jpg" alt="orange juice">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">orange juice</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span class="del"><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/dr4.jpg" alt="lemonada">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">lemonada</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/dr5.jpg" alt="vegetables">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">vegetables</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/dr6.jpg" alt="sugarcane">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">sugarcane</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div> -->
+               <!--menu-5-->
+               <!-- <div class="tap-pane fade" id="menu-5" role="tabpanel" aria-labelledby="nav-menu-5">
+                <div class="menu-items-wrapper p-50">
+                    <div class="menu-i-shapes">
+                        <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
+                    </div>
+                    <div class="row position-relative">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-menu-item d-flex justify-content-between">
+                                <div class="menu-img">
+                                    <img src="images/dr1.jpg" alt="prune juice">
+                                </div>
+                                <div class="menu-content">
+                                    <h5><a href="#">prune juice</a></h5>
+                                    <p>shirmp. squid, pineapple</p>
+                                    <span>price :$15.00</span>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-menu-item d-flex justify-content-between">
+                                <div class="menu-img">
+                                    <img src="images/dr2.jpg" alt="guafa juice">
+                                </div>
+                                <div class="menu-content">
+                                    <h5><a href="#">guafa juice</a></h5>
+                                    <p>shirmp. squid, pineapple</p>
+                                    <span>price :$15.00</span>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-menu-item d-flex justify-content-between">
+                                <div class="menu-img">
+                                    <img src="images/dr3.jpg" alt="orange juice">
+                                </div>
+                                <div class="menu-content">
+                                    <h5><a href="#">orange juice</a></h5>
+                                    <p>shirmp. squid, pineapple</p>
+                                    <span>price :$15.00</span>
+                                    <span class="del"><del>$15.00</del></span>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row position-relative">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-menu-item d-flex justify-content-between">
+                                <div class="menu-img">
+                                    <img src="images/dr4.jpg" alt="lemonada">
+                                </div>
+                                <div class="menu-content">
+                                    <h5><a href="#">lemonada</a></h5>
+                                    <p>shirmp. squid, pineapple</p>
+                                    <span>price :$15.00</span>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-menu-item d-flex justify-content-between">
+                                <div class="menu-img">
+                                    <img src="images/dr5.jpg" alt="vegetables">
+                                </div>
+                                <div class="menu-content">
+                                    <h5><a href="#">vegetables</a></h5>
+                                    <p>shirmp. squid, pineapple</p>
+                                    <span>price :$15.00</span>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="single-menu-item d-flex justify-content-between">
+                                <div class="menu-img">
+                                    <img src="images/dr6.jpg" alt="sugarcane">
+                                </div>
+                                <div class="menu-content">
+                                    <h5><a href="#">sugarcane</a></h5>
+                                    <p>shirmp. squid, pineapple</p>
+                                    <span>price :$15.00</span>
+                                    <span><del>$15.00</del></span>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+               </div> -->
+                <!--menu-6-->
+                <!-- <div class="tap-pane fade" id="menu-6" role="tabpanel" aria-labelledby="nav-menu-6">
+                    <div class="menu-items-wrapper p-50">
+                        <div class="menu-i-shapes">
+                            <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz1.png" alt="margherita">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">margherita</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br1.png" alt="garlic burger">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">garlic burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch6.png" alt="crispy">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">crispy chicken</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span class="del"><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/br3.png" alt="beef">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">beef burger</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/piz5.png" alt="americana">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">americana</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-menu-item d-flex justify-content-between">
+                                    <div class="menu-img">
+                                        <img src="images/ch5.png" alt="thai chicken">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h5><a href="#">thai chicken</a></h5>
+                                        <p>shirmp. squid, pineapple</p>
+                                        <span>price :$15.00</span>
+                                        <span><del>$15.00</del></span>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="best-quality pt-60">
+        <div class="best-shapes d-none d-xl-block">
+            <span class="bs-1"><img src="images/31.png" alt="half-burger"></span>
+            <span class="bs-2"><img src="images/37.png" alt=""></span>
+        </div>
+        <div class="container">
+            <div class="common-title-area text-center p-50 fadeInUp" style="visibility: visible;animation-name: fadeInUp;">
+                <h3>why choose us?</h3>
+                <h2>Best Quality <span>item<br>Ingredients</span></h2>
+            </div>
+            <div class="row align-items-md-center align-items-lg-start">
+                <div class="col-lg-3 col-md-3 col-sm-12 text-center text-md-left mb-60 wow fadeInLeft" style="visibility: visible;animation-name: fadeInLeft;">
+                    <div class="ingredients mb-80">
+                        <h5>Moist Sour Cream Bread</h5>
+                        <p>Shrimp, Squid, Pineapple</p>
+                        <h6>price: $5.00</h6>
+                        <img src="images/bshape1.png" alt="arrow" class="bs-3 d-none d-lg-block">
+                    </div>
+                    <div class="ingredients">
+                        <h5>ground beef</h5>
+                        <p>Mutton, Squid, Chicken</p>
+                        <h6>Price: $5.00</h6>
+                        <img src="images/bshape1.png" alt="arrow" class="bs-4 d-none d-lg-block">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-60 fadeInUp" style="visibility: visible;animation-name: fadeInUp;">
+                    <div class="ingredients-img">
+                        <img src="images/dblburger.png" alt="big burger">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 wow fadeInRight" style="visibility: visible;animation-name: fadeInRight;">
+                   <div class="ingredients text-center text-md-right mb-80">
+                    <h5>green Vegetable</h5>
+                    <p>Tomato, Cucumber, Onion, Egg</p>
+                    <h6>Price: $5.00</h6>
+                    <img src="images/bshape2.png" alt="arrow" class="bs-5 d-none d-lg-block">
+                   </div>
+                   <div class="ingredients text-center text-md-right ">
+                    <h5>artisen bunas</h5>
+                    <p>Mutton, Squid, Chicken</p>
+                    <h6>Price: $5.00</h6>
+                    <img src="images/bshape2.png" alt="arrow" class="bs-6 d-none d-lg-block">
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery-area delivery-area2 pt-115 pb-100">
+        <div class="del-shapes">
+            <div></div>
+        </div>
+        <div></div>
+    </section>
+   
+</div>
     <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
