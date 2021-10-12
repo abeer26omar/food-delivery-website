@@ -82,3 +82,22 @@ btn.addEventListener('click', function(){
 //   console.log('fuck off')
 // }
 // })
+
+
+//animation 1
+const titleArea1 = document.querySelector('.common-title-area');
+titleArea1.classList.remove('fadeInLeft');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      titleArea1.classList.add('fadeInLeft');
+      return;
+    }
+
+    titleArea1.classList.remove('fadeInLeft');
+  });
+});
+
+observer.observe(document.querySelector('.delivery-right'));
+
