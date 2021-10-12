@@ -1,11 +1,13 @@
 //pre-Loader
 function preLoader() {
-  setTimeout(showPage, 500);
+  setTimeout(showPage, 2000);
 }
 function showPage() {
   document.getElementById("preloader").style.display = "none";
   document.getElementById("body").style.display = "block";
 }
+/*-------------------------------------------------------------------------*/
+
 //mobile menu
 var btn = document.getElementById("mobil-menu");
 var menu = document.getElementById("menu-ul");
@@ -19,7 +21,9 @@ btn.addEventListener('click', function(){
     menu.style.display = "none";
     btn.classList.remove('open'); 
   }
-})
+});
+/*-------------------------------------------------------------------------*/
+
 // MouseHover Animation 
  var hoverLayer2 = $(".burger-promo-area");
  var heroImgfive = $(".sh-1");
@@ -54,50 +58,22 @@ btn.addEventListener('click', function(){
      transform: "translate3d(" + valueX + "px," + valueY + "px, 0)"
    });
  });
-//menu navigator
-// $('#nav-tab a').on('click', function (e) {
-//   e.preventDefault()
-//   $(this).tab('show');
-//   document.getElementsByClassName('tap-pane') = "block";
-// })
-
-// var tabEl = document.querySelector('button[data-bs-toggle="tab"]')
-// tabEl.addEventListener('shown.bs.tab', function (event) {
-//   event.target // newly activated tab
-//   event.relatedTarget // previous active tab
-// })
-// var triggerTabList = [].slice.call(document.querySelectorAll('#nav-menu-1'))
-// triggerTabList.forEach(function (triggerEl) {
-//   var tabTrigger = new bootstrap.Tab(triggerEl)
-
-//   triggerEl.addEventListener('click', function (event) {
-//     event.preventDefault()
-//     tabTrigger.show()
-//   })
-// });
- 
-// $('#nav-tab a').on('click',function(event){
-//  event.preventDefault();
-//  if($('#nav-tab a').hasAttribute('class','active')){
-//   console.log('fuck off')
-// }
-// })
-
+ /*-------------------------------------------------------------------------*/
 
 //animation 1
-const titleArea1 = document.querySelector('.common-title-area');
-titleArea1.classList.remove('fadeInLeft');
+// const titleArea1 = document.querySelector('.common-title-area');
+// titleArea1.classList.remove('fadeInLeft');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      titleArea1.classList.add('fadeInLeft');
-      return;
-    }
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       titleArea1.classList.add('fadeInLeft');
+//       return;
+//     }
 
-    titleArea1.classList.remove('fadeInLeft');
-  });
-});
+//     titleArea1.classList.remove('fadeInLeft');
+//   });
+// });
 
-observer.observe(document.querySelector('.delivery-right'));
+// observer.observe(document.querySelector('.delivery-right'));
 

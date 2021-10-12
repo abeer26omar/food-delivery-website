@@ -616,7 +616,26 @@ header .mobile-menu{
       transform: translate3d(0, 0, 0);
     }
   }
-      
+.fadeInRight{
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(50px, 0, 0);
+      transform: translate3d(50px, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
 .common-title-area h3 {
     font-family: "Caveat", cursive;
     color: #cc3333;
@@ -1492,6 +1511,7 @@ header .mobile-menu{
     background: #fff8ee;
     position: relative;
 }   
+
 .popular-dishes-area .popular-tab-nav a {
     color: #2a435d;
     text-transform: capitalize;
@@ -1514,6 +1534,13 @@ header .mobile-menu{
     border-radius: 5px;
     background: #ffffff;
 }
+.single-dishes:hover {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1);
+    box-shadow: 0px 25px 60px 0px rgba(0, 21, 100, 0.1); }
+    .single-dishes:hover .cart-opt {
+      visibility: visible;
+      opacity: 1; }
 .home2-single-dishes {
     background: #fff8ee;
     -webkit-box-align: center;
@@ -1549,11 +1576,17 @@ header .mobile-menu{
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+.home2-single-dishes h6 a {
+    color: #2a435d;
+}
+.home2-single-dishes h6 a:hover {
+    color: #cc3333;
+}
 .home2-single-dishes p {
     margin-bottom: 10px;
 }
 .single-dishes .dish-content .price {
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     color: #2a435d;
@@ -1567,6 +1600,12 @@ header .mobile-menu{
     color: #ffffff;
     padding: 5px 10px;
     text-transform: uppercase;
+}
+.single-dishes .hot{
+    background: #cc3333 !important;
+}
+.single-dishes .new{
+    background: #4e9d4efc !important;
 }
 .single-dishes .cart-opt {
     width: 20px;
@@ -1585,6 +1624,11 @@ header .mobile-menu{
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+}
+@media(max-width:329px){
+    .single-dishes .cart-opt{
+        left: 8px;
+    }
 }
 .single-dishes .cart-opt span {
     border: 1px solid #cc3333;

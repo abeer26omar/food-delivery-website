@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Delivery</title>
     <!--external css-->
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/meanmenu.min.css">
@@ -216,9 +216,9 @@
             <div class="menu-nav-wrapper">
                 <div class="container">
                     <div class="row">
-                        <nav>
-                            <div class="nav" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-menu-1" data-bs-toggle="tab" role="tab" 
+                            <ul class="nav" id="nav-tab" role="tablist">
+                               <li class="nav-item" role="presentation">
+                                <a class="nav-link active show" id="nav-menu-1" data-bs-toggle="tab" role="tab" 
                                 data-bs-target="#menu-1" aria-controls="menu-1" aria-selected="true">
                                 <div class="single-menu-nav text-center">
                                     <div class="menu-img mb-10">
@@ -228,8 +228,9 @@
                                     <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
                                     <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
                                 </div></a>
-                                <a class="nav-item nav-link" id="nav-menu-2" 
-                                data-bs-toggle="tab" role="tab" 
+                               </li>
+                               <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="nav-menu-2" data-bs-toggle="tab" role="tab" 
                                 data-bs-target="#menu-2" aria-controls="menu-2" aria-selected="false">
                                 <div class="single-menu-nav text-center">
                                     <div class="menu-img mb-10">
@@ -239,7 +240,9 @@
                                     <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
                                     <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
                                 </div></a>
-                                <a class="nav-item nav-link" id="nav-menu-3" data-bs-toggle="tab" role="tab" 
+                               </li>
+                               <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="nav-menu-3" data-bs-toggle="tab" role="tab" 
                                 data-bs-target="#menu-3" aria-controls="menu-3" aria-selected="false">
                                 <div class="single-menu-nav text-center">
                                     <div class="menu-img mb-10">
@@ -249,7 +252,9 @@
                                     <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
                                     <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
                                 </div></a>
-                                <a class="nav-item nav-link" id="nav-menu-4" data-bs-toggle="tab" role="tab" 
+                               </li>
+                               <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="nav-menu-4" data-bs-toggle="tab" role="tab" 
                                 data-bs-target="#menu-4" aria-controls="menu-4" aria-selected="false">
                                 <div class="single-menu-nav text-center">
                                     <div class="menu-img mb-10">
@@ -259,7 +264,9 @@
                                     <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
                                     <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
                                 </div></a>
-                                <a class="nav-item nav-link" id="nav-menu-5" data-bs-toggle="tab" role="tab" 
+                               </li> 
+                               <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="nav-menu-5" data-bs-toggle="tab" role="tab" 
                                 data-bs-target="#menu-5" aria-controls="menu-5" aria-selected="false">
                                 <div class="single-menu-nav text-center">
                                     <div class="menu-img mb-10">
@@ -269,6 +276,8 @@
                                     <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
                                     <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
                                 </div></a>
+                               </li>
+                               <li class="nav-item" role="presentation">
                                 <a class="nav-item nav-link" id="nav-menu-6" data-bs-toggle="tab" role="tab" 
                                 data-bs-target="menu-6" aria-controls="menu-6" aria-selected="false">
                                 <div class="single-menu-nav text-center">
@@ -279,15 +288,15 @@
                                     <span class="bg-1"><img src="images/10 (1).png" alt="rosemary"></span>
                                     <span class="bg-2"><img src="images/14 (1).png" alt="rosemary"></span>
                                 </div></a>
-                            </div>
-                        </nav>
+                               </li>
+                            </ul>
                     </div>
                 </div>
             </div>
                   <!--menu items wrapper-->
             <div class="tab-content" id="nav-tabContent">
                 <!--menu-1-->
-                <div class="tap-pane fade show active" id="menu-1" role="tabpanel" aria-labelledby="nav-menu-1">
+                <div class="tab-pane fade show active" id="menu-1" role="tabpanel" aria-labelledby="nav-menu-1">
                     <div class="menu-items-wrapper p-50">
                         <div class="menu-i-shapes">
                             <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
@@ -373,7 +382,7 @@
                     </div>
                 </div>
                 <!--menu-2-->
-                <div class="tap-pane fade " id="menu-2" role="tabpanel" aria-labelledby="nav-menu-2">
+                <div class="tab-pane fade " id="menu-2" role="tabpanel" aria-labelledby="nav-menu-2">
                     <div class="menu-items-wrapper p-50">
                         <div class="menu-i-shapes">
                             <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
@@ -459,7 +468,7 @@
                     </div>
                 </div>
                 <!--menu-3-->
-                <div class="tap-pane fade " id="menu-3" role="tabpanel" aria-labelledby="nav-menu-3">
+                <div class="tab-pane fade " id="menu-3" role="tabpanel" aria-labelledby="nav-menu-3">
                     <div class="menu-items-wrapper p-50">
                         <div class="menu-i-shapes">
                             <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
@@ -545,7 +554,7 @@
                     </div>
                 </div>
                 <!--menu-4-->
-               <div class="tap-pane fade" id="menu-4" role="tabpanel" aria-labelledby="nav-menu-4">
+               <div class="tab-pane fade" id="menu-4" role="tabpanel" aria-labelledby="nav-menu-4">
                     <div class="menu-items-wrapper p-50">
                         <div class="menu-i-shapes">
                             <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
@@ -631,7 +640,7 @@
                     </div>
                 </div>
                <!--menu-5-->
-               <div class="tap-pane fade" id="menu-5" role="tabpanel" aria-labelledby="nav-menu-5">
+               <div class="tab-pane fade" id="menu-5" role="tabpanel" aria-labelledby="nav-menu-5">
                 <div class="menu-items-wrapper p-50">
                     <div class="menu-i-shapes">
                         <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
@@ -717,7 +726,7 @@
                 </div>
                </div>
                 <!--menu-6-->
-                <div class="tap-pane fade" id="menu-6" role="tabpanel" aria-labelledby="nav-menu-6">
+                <div class="tab-pane fade" id="menu-6" role="tabpanel" aria-labelledby="nav-menu-6">
                     <div class="menu-items-wrapper p-50">
                         <div class="menu-i-shapes">
                             <span class="item-shape-1"><img src="images/7.png" alt="rosemary"></span>
@@ -900,27 +909,27 @@
                     <h3>food items</h3>
                     <h2>popular <span>dishes</span> </h2>
                 </div>
-                <div class="nav mb-30 wow fadeInRight" id="nav-tab-1" role="tablist" style="visibility: visible; animation-name: fadeInRight;">
-                    <a class="nav-link active show" id="home-tab" 
-                    data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">all items</a>
-
-                    <a class="nav-link" id="nav-tab-home" 
-                    data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="false">pizza</a>
-
-                    <a class="nav-link" id="nav-tab-11" 
-                    data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">burger</a>
-
-                    <a class="nav-link" id="nav-tab-2" 
-                    data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">chicken</a>
-
-                    <a class="nav-link" id="nav-tab-3" 
-                    data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">drinks</a>
-                </div>
+                    <ul class="nav mb-30 wow fadeInRight" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active show" id="nav-tab-1" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">all items</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="nav-tab-2" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="false">pizza</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="nav-tab-3" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">burger</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link" id="nav-tab-4" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">chicken</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                           <a class="nav-link" id="nav-tab-5" data-bs-toggle="tab" data-bs-target="#tab-4" type="button" role="tab" aria-controls="tab-4" aria-selected="false">drinks</a>
+                        </li>
+                    </ul>
             </nav>
             <div class="tab-content" id="nav-tabContent-1">
-
                 <!-- all items -->
-                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home">
+                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="home2-single-dishes single-dishes d-flex justify-content-between">
@@ -932,7 +941,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -968,7 +977,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price badge-color">price :$15.00</span>
                                 </div>
-                                <span class="badge badge-bg-color">new</span>
+                                <span class="badge new">new</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1004,7 +1013,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1033,7 +1042,7 @@
                     </div>
                 </div>
                 <!-- pizza -->
-                <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="nav-tab-1">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="home2-single-dishes single-dishes d-flex justify-content-between">
@@ -1045,7 +1054,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1081,7 +1090,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price badge-color">price :$15.00</span>
                                 </div>
-                                <span class="badge badge-bg-color">new</span>
+                                <span class="badge new">new</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1117,7 +1126,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1146,7 +1155,7 @@
                     </div>
                 </div>
                 <!-- burger -->
-                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="nav-tab-2">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="home2-single-dishes single-dishes d-flex justify-content-between">
@@ -1158,7 +1167,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1194,7 +1203,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price badge-color">price :$15.00</span>
                                 </div>
-                                <span class="badge badge-bg-color">new</span>
+                                <span class="badge new">new</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1230,7 +1239,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1260,7 +1269,7 @@
                     </div>
                 </div>
                 <!-- chicken -->
-                <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="nav-tab-3">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="home2-single-dishes single-dishes d-flex justify-content-between">
@@ -1272,7 +1281,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1308,7 +1317,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price badge-color">price :$15.00</span>
                                 </div>
-                                <span class="badge badge-bg-color">new</span>
+                                <span class="badge new">new</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1344,7 +1353,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1373,7 +1382,7 @@
                     </div>
                 </div>
                 <!-- drinks -->
-                <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
+                <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="nav-tab-4">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="home2-single-dishes single-dishes d-flex justify-content-between">
@@ -1385,7 +1394,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1421,7 +1430,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price badge-color">price :$15.00</span>
                                 </div>
-                                <span class="badge badge-bg-color">new</span>
+                                <span class="badge new">new</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
@@ -1457,7 +1466,7 @@
                                     <p>It is a long established fact that a reader BBQ.</p>
                                     <span class="price">price :$15.00</span>
                                 </div>
-                                <span class="badge">hot</span>
+                                <span class="badge hot">hot</span>
                                 <div class="cart-opt">
                                     <span>
                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>
