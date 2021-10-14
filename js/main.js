@@ -1,6 +1,6 @@
 //pre-Loader
 function preLoader() {
-  setTimeout(showPage, 2000);
+  setTimeout(showPage, 500);
 }
 function showPage() {
   document.getElementById("preloader").style.display = "none";
