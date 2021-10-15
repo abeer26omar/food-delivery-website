@@ -1672,19 +1672,19 @@ header .mobile-menu{
 }
 .serve .serve-left .s-shapes .serve-1 {
     position: absolute;
-    top: 18%;
+    top: 14%;
     left: 35%;
     z-index: -1;
 }
 .serve .serve-left .s-shapes .serve-2 {
     position: absolute;
     left: 40%;
-    top: 40%;
+    top: 35%;
 }
 .serve .serve-left .s-shapes .serve-3 {
     position: absolute;
     left: 35%;
-    top: 53%;
+    top: 48%;
     z-index: -1;
 }
 @media (min-width: 1199.99px) and (max-width: 1350.98px) {
@@ -1695,7 +1695,7 @@ header .mobile-menu{
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .serve .serve-left .s-shapes .serve-1,
     .serve .serve-left .s-shapes .serve-3 {
-        left: 38%; } 
+        left: 36%; } 
     
     .serve .serve-left .s-shapes .serve-2 {
         left: 40%; }    
@@ -1773,7 +1773,7 @@ header .mobile-menu{
 }
 .serve .serve-left .inner-counter {
     position: absolute;
-    bottom: 13%;
+    bottom: 16%;
     left: 30%;
 }
 @media (max-width: 575.98px) {
@@ -1790,6 +1790,11 @@ header .mobile-menu{
         left: 43%;
         bottom: 52%;} 
     }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .serve .serve-left .inner-counter {
+            bottom: 20%;
+        }   
+        }
 .serve .serve-left .inner-counter .counter{
     padding: 20px;
     position: relative;

@@ -61,44 +61,43 @@ btn.addEventListener('click', function(){
  /*-------------------------------------------------------------------------*/
 
 //animation 1
-// const titleArea1 = document.querySelector('.common-title-area');
-// titleArea1.classList.remove('fadeInLeft');
+const titleArea1 = document.querySelector('.common-title-area')
+titleArea1.classList.remove('animated','fadeInLeft');
 
-// const observer = new IntersectionObserver(entries => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       titleArea1.classList.add('fadeInLeft');
-//       return;
-//     }
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      titleArea1.classList.add('animated','fadeInLeft');
+      return;
+    }
 
-//     titleArea1.classList.remove('fadeInLeft');
-//   });
-// });
+    titleArea1.classList.remove('animated','fadeInLeft');
+  });
+});
 
-// observer.observe(document.querySelector('.delivery-right'));
+observer.observe(document.querySelector('.container'));
+/*********************************************************/
 
-/***************************************************************/
-// counter
-// document.addEventListener("DOMContentLoaded" , function(){
-//   const counter = document.querySelector('.count');
-//   const speed = 200;
-//   const startCount = () =>{
-//   const target = +counter.getAttribute('data-target');
-//   // console.log(target);
-//   const count = +counter.innerText;
-//   const inc = target / speed;
-//   // console.log(inc)
-//   if(count < target){
-//     counter.innerText = count + inc ;
-//     setTimeout(startCount , 1);
-//     // console.log('counter works');
-//   }
-//   else{
-//     count.innerText = target;
-//   }
-// }
-// startCount();
-// })
+/***************************counter****************************/ 
+  const counter = document.querySelector('.count');
+  const speed = 200;
+  const startCount = () =>{
+  const target = +counter.getAttribute('data-target');
+  // console.log(target);
+  const count = +counter.innerText;
+  const inc = target / speed;
+  // console.log(inc)
+  if(count < target){
+    counter.innerText = count + inc ;
+    setTimeout(startCount , 1);
+    // console.log('counter works');
+  }
+  else{
+    count.innerText = target;
+  }
+}
+startCount();
+
 
 /******************owl carousal*****************************/
 $(document).ready(function() {
