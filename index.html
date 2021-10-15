@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Delivery</title>
     <!--external css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
@@ -1515,8 +1517,8 @@
                         <div class="inner-counter">
                             <div class="counter text-center">
                                 <img class="img" src="images/3.png" alt="salts">
-                                <div class="items count">
-                                    2000
+                                <div class="items count" data-target="2000">
+                                    0
                                 </div>
                                 <p>food item</p>
                                 <span class="chef-1"><img src="images/10 (1).png" alt=""></span>
@@ -1582,21 +1584,114 @@
             </div>
         </div>
     </section>
-    <section>
-        
+    <!--testimonials-->
+    <section class="testimonial pb-120 pt-110">
+        <div class="container">
+            <div class="t-shapes">
+                <span class="ts-1"><img src="images/triple.png" alt="pepper"></span>
+                <span class="ts-2 item-bounce"><img src="images/35.png" alt="rosemary"></span>
+                <span class="ts-3 item-animateTwo"><img src="images/26.png" alt="leaf"></span>
+            </div>
+            <div class="common-title-area text-center pb-50 wow animate__animated animate__fadeInUp">
+                <h3>testimonial</h3>
+                <h2>client <span>feedback</span></h2>
+            </div>
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="item first prev">
+                    <div class="card border-0 py-3 px-4">
+                        <div class="row justify-content-center"> 
+                            <span class="img-shape"><img src="images/33.png" alt=""></span>
+                            <img src="images/gazoShk.jpg" class="img-fluid profile-pic mb-4 mt-3"> 
+                        </div>
+                        <h6 class="mb-2 mt-2">Marielle Haag</h6>
+                        <div class="testi-rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="mt-2">Food Khan is a gret Restaurant from the University of Texas at Austin has been
+                            researching
+                            the benefits of frequent testing and the feedback
+                            leads to. He explains that in the history of the study.</p>                    
+                    </div>
+                </div>
+                <div class="item show">
+                    <div class="card border-0 py-3 px-4">
+                        <div class="row justify-content-center"> 
+                            <span class="img-shape"><img src="images/33.png" alt=""></span>
+                            <img src="images/oW8Wpwi.jpg" class="img-fluid profile-pic mb-4 mt-3"> </div>
+                        <h6 class="mb-2 mt-2">Ximena Vegara</h6>
+                        <div class="testi-rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="mt-2">Food Khan is a gret Restaurant from the University of Texas at Austin has been
+                            researching
+                            the benefits of frequent testing and the feedback
+                            leads to. He explains that in the history of the study.</p> 
+                    </div>
+                </div>
+                <div class="item next">
+                    <div class="card border-0 py-3 px-4">
+                        <div class="row justify-content-center"> 
+                            <span class="img-shape"><img src="images/33.png" alt=""></span>
+                            <img src="images/ndQx2Rg.jpg" class="img-fluid profile-pic mb-4 mt-3"> 
+                        </div>
+                        <h6 class="mb-2 mt-2">John Paul</h6>
+                        <div class="testi-rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="mt-2">Food Khan is a gret Restaurant from the University of Texas at Austin has been
+                            researching
+                            the benefits of frequent testing and the feedback
+                            leads to. He explains that in the history of the study.</p> 
+                    </div>
+                </div>
+                <div class="item last">
+                    <div class="card border-0 py-3 px-4">
+                        <div class="row justify-content-center"> 
+                            <span class="img-shape"><img src="images/33.png" alt=""></span>
+                            <img src="images/T5aOhwh.jpg" class="img-fluid profile-pic mb-4 mt-3"> 
+                        </div>
+                        <h6 class="mb-2 mt-2">William Doe</h6>
+                        <div class="testi-rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="mt-2">Food Khan is a gret Restaurant from the University of Texas at Austin has been
+                            researching
+                            the benefits of frequent testing and the feedback
+                            leads to. He explains that in the history of the study.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>  
 </div>
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <!-- <script src="js/wow.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="js/main.js"></script>
     <script>
     new WOW().init();
     </script>
-    <script src="js/main.js"></script>
     
 </body>
 </html>

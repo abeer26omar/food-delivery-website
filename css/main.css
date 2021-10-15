@@ -116,6 +116,9 @@ img {
 .pb-100{
     padding-bottom: 100px;
 }
+.pb-120 {
+    padding-bottom: 120px;
+}
 .pb-135{
     padding-bottom: 135px;
 }
@@ -1840,3 +1843,134 @@ header .mobile-menu{
 .single-dishes .dish-content h5 a {
     color: #2a435d;
 }
+/*testimonails*/
+.testimonial{
+    position: relative;
+    background: linear-gradient(-90deg, white 0%, #fffaec 100%);
+}
+.testimonial .t-shapes img {
+    width: inherit;
+}
+.testimonial .t-shapes .ts-1 {
+    position: absolute;
+    top: 43%;
+    left: 0;
+}
+.testimonial .t-shapes .ts-2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+.testimonial .t-shapes .ts-3 {
+    position: absolute;
+    top: inherit;
+    right: 17%;
+    bottom: 22%;
+}
+.testimonial .testi-rating span {
+    color: #ff9933;
+}
+.testimonial .img-shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: -3%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: inherit;
+}
+.testimonial .card p{
+    font-weight: 600;
+}
+/*****************/
+.card {
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.profile-pic {
+    width: 100px !important;
+    height: 100px;
+    box-shadow: 0px 4px 8px 0px #BDBDBD
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #cc3333 !important;
+    border: none;
+    padding: 5px 20px !important;
+    font: inherit;
+    font-size: 50px !important
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #cc3333 !important;
+    background-color: transparent !important
+}
+
+.owl-dots {
+    display: none
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.item {
+    display: none
+}
+
+.next {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.prev {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.item.show {
+    display: block;
+    transition-duration: 0.4s
+}
+
+@media screen and (max-width: 999px) {
+
+    .next,
+    .prev {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    .item {
+        display: block !important
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
