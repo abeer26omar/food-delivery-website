@@ -110,6 +110,9 @@ img {
 .pb-40{
     padding-bottom: 40px;
 } 
+.pb-45 {
+    padding-bottom: 45px;
+}
 .pb-60{
     padding-bottom: 60px;
 } 
@@ -1963,15 +1966,68 @@ button:focus {
         display: block !important
     }
 }
+/********footer*********************/
 
+footer {
+    background: #ffffff;
+    position: relative;
+}
+footer .fo-shapes .fo-1{
+    position: absolute;
+    top: 10%;
+    left: 4%;
+}
+footer .fo-shapes .fo-2{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+footer .fo-shapes .fo-3{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+footer .fo-shapes .fo-4{
+    position: absolute;
+    top: 20%;
+    right: 8%;
+}
+footer .fo-shapes .fo-5{
+    position: absolute;
+    bottom: 2%;
+    left: 20%;
+}
+footer .fo-shapes .fo-6{
+    position: absolute;
+    bottom: 2%;
+    right: 25%;
+}
+footer .fo-shapes img{
+    width: inherit;
+}
 
-
-
-
-
-
-
-
+footer .top .f-title h4 span {
+    color: #cc3333;
+}
+form .form{
+    position: relative;
+}
+form .form span{
+    position: absolute;
+    left: 4%;
+    top: 11%;
+}
+footer .top .form input {
+    background: transparent;
+    border: 1px solid #e6e6e6;
+    color: #2a435d !important;
+    padding: 10px 55px;
+    border-radius: 5px;
+}
+.footer .top .form .btn.bttn {
+    padding: 10px 55px;
+    border-radius: 5px;
+}
 
 
 

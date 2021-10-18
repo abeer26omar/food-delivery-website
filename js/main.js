@@ -75,28 +75,28 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-observer.observe(document.querySelector('.container'));
+observer.observe(document.querySelector('.delivery-right'));
 /*********************************************************/
 
 /***************************counter****************************/ 
-  const counter = document.querySelector('.count');
-  const speed = 200;
-  const startCount = () =>{
-  const target = +counter.getAttribute('data-target');
-  // console.log(target);
-  const count = +counter.innerText;
-  const inc = target / speed;
-  // console.log(inc)
-  if(count < target){
-    counter.innerText = count + inc ;
-    setTimeout(startCount , 1);
-    // console.log('counter works');
-  }
-  else{
-    count.innerText = target;
-  }
-}
-startCount();
+//   const counter = document.querySelector('.count');
+//   const speed = 200;
+//   const startCount = () =>{
+//   const target = +counter.getAttribute('data-target');
+//   // console.log(target);
+//   const count = +counter.innerText;
+//   const inc = target / speed;
+//   // console.log(inc)
+//   if(count < target){
+//     counter.innerText = count + inc ;
+//     setTimeout(startCount , 1);
+//     // console.log('counter works');
+//   }
+//   else{
+//     count.innerText = target;
+//   }
+// }
+// startCount();
 
 
 /******************owl carousal*****************************/
