@@ -60,24 +60,6 @@ btn.addEventListener('click', function(){
  });
  /*-------------------------------------------------------------------------*/
 
-//animation 1
-// const titleArea1 = document.querySelector('.common-title-area')
-// titleArea1.classList.remove('animated','fadeInLeft');
-
-// const observer = new IntersectionObserver(entries => {
-//   entries.forEach(entry => {
-//     if (entry.isIntersecting) {
-//       titleArea1.classList.add('animated','fadeInLeft');
-//       return;
-//     }
-
-//     titleArea1.classList.remove('animated','fadeInLeft');
-//   });
-// });
-
-// observer.observe(document.querySelector('.delivery-right'));
-/*********************************************************/
-
 /***************************counter****************************/ 
 //   const counter = document.querySelector('.count');
 //   const speed = 200;
@@ -164,3 +146,23 @@ $(document).ready(function() {
   });
   
   });
+  /************************scroll up******************************/
+  (function ($) {
+    "use strict"
+    jQuery(document).ready(function () {
+      $('.scrollup').on('click', function () {
+        $("html").animate({
+          "scrollTop": '0'
+        }, 1200);
+      });
+      $(window).on('scroll', function () {
+        var toTopVisible = $('html').scrollTop();
+        if (toTopVisible > 500) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+    });
+  })(jQuery);
+  

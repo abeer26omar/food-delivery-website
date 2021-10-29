@@ -2123,3 +2123,25 @@ footer .middle .reserve button {
     margin-left: 3px;
     width: 100%;
 }
+/*scroll up*/
+.scrollup {
+    background: #cc3333;
+    color: #ffffff;
+    /* display: block; */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
+.scrollup:hover {
+    background: #2a435d; 
+}
