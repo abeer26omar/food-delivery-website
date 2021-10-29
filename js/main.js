@@ -61,21 +61,21 @@ btn.addEventListener('click', function(){
  /*-------------------------------------------------------------------------*/
 
 //animation 1
-const titleArea1 = document.querySelector('.common-title-area')
-titleArea1.classList.remove('animated','fadeInLeft');
+// const titleArea1 = document.querySelector('.common-title-area')
+// titleArea1.classList.remove('animated','fadeInLeft');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      titleArea1.classList.add('animated','fadeInLeft');
-      return;
-    }
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       titleArea1.classList.add('animated','fadeInLeft');
+//       return;
+//     }
 
-    titleArea1.classList.remove('animated','fadeInLeft');
-  });
-});
+//     titleArea1.classList.remove('animated','fadeInLeft');
+//   });
+// });
 
-observer.observe(document.querySelector('.delivery-right'));
+// observer.observe(document.querySelector('.delivery-right'));
 /*********************************************************/
 
 /***************************counter****************************/ 
