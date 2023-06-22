@@ -83,7 +83,6 @@ startCount();
 
 /******************owl carousal*****************************/
 $(document).ready(function() {
-
   $('.owl-carousel').owlCarousel({
   mouseDrag:false,
   loop:true,
@@ -144,6 +143,7 @@ $(document).ready(function() {
   }
   }
   });
+  
   
   });
   /************************scroll up******************************/
